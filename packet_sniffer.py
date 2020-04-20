@@ -2,7 +2,6 @@ from scapy.all import *
 from scapy.layers import http
 import argparse
 import subprocess
-
 from scapy.layers.inet import IP
 
 
