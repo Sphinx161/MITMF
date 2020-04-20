@@ -44,7 +44,7 @@ class Sniffer:
 
     def execute_pkt_sniffer(self):
         interface = self.get_interface()
-        subprocess.call(["echo", "1", ">", "/proc/sys/net/ipv4/ip_forward"])
+        var = subprocess.call(["echo", "1", ">", "/proc/sys/net/ipv4/ip_forward"])
         self.sniffer(interface)
 
 
