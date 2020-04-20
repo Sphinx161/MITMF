@@ -15,9 +15,8 @@ class Spyware:
 
     def get_client_ip_list(self, client_list):
         client_ip_list = []
-        for element in client_list:
-            if str(element) != str(conf.route.route("0.0.0.0")[2]):
-                client_ip_list.append(element["ip"])
+        for element in client_list: 
+            client_ip_list.append(element["ip"])
         total_clients = len(client_ip_list)
         print("[+] Client List [" + str(total_clients) + "]" + "\n" + str(client_ip_list))
         return client_ip_list
